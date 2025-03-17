@@ -12,3 +12,5 @@ CLIENT = OpenAI(
     api_key=api_key,
     base_url="https://api.perplexity.ai"
 )
+
+TEMPERATURE = 0.1

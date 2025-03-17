@@ -1,4 +1,4 @@
-from config import CLIENT
+from config import CLIENT, TEMPERATURE
 
 SYSTEM_INSTRUCTIONS = """
 You are an experienced equity research analyst.
@@ -34,7 +34,7 @@ def equity_research(ticker: str) -> str:
         }
     ]
 
-    print("Sending request to Perplexity API")
+    print(f"Sending a request for an equity research report on {ticker}...")
 
     # Temperature controls the randomness of the response
     # Values range from 0.0 and 2.0 with lower temperatures 
@@ -42,7 +42,7 @@ def equity_research(ticker: str) -> str:
     response = CLIENT.chat.completions.create(
         model="sonar-pro",
         messages=messages,
-        temperature=0.1
+        temperature=TEMPERATURE
     )
 
     ### NTD: Need to parse the response to extract citations in a clickable format

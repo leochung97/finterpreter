@@ -5,7 +5,7 @@ import argparse
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Financial Research CLI Tool")
     parser.add_argument("-t", "--ticker", help="Research stock ticker to generate equity research report")
-    parser.add_argument("-m", "--market", help="Research financial markets to generaate market research report")
+    parser.add_argument("-m", "--market", action="store_true", help="Research financial markets to generate market research report")
 
     args = parser.parse_args()
 
