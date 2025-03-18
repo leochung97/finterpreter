@@ -16,4 +16,4 @@ if __name__ == "__main__":
         report = equity_research(args.ticker)
         print(report)
     else:
-        print("Please provide a valid argument")   
+        print("Please provide a valid argument")

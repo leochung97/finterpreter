@@ -1,22 +1,19 @@
-from config import CLIENT, TEMPERATURE
+from config import CLIENT, MODEL, TEMPERATURE, FORMATTED_DATE
 
-SYSTEM_INSTRUCTIONS = """
+SYSTEM_INSTRUCTIONS = f"""
 You are an experienced economist specialized in equity market research.
 
 Rules:
 1. The report should be written in a professional tone, free of spelling and grammatical errors.
 2. The report should be well-organized and structured.
-3. The report should include publicly sourced information.
+3. The report should only include macroeconomic information relevant to the United States.
+4. The report should always include the following sections in this order: Summary, Recent News, Global Economic Policy Changes, Jobs Report (if available), Inflation Report (if available), Upcoming Economic Events"
+5. The report should not use any brackets or provide tables to structure data.
 
 Steps:
-1. Research the macroeconomic environment to understand the current market conditions.
-2. Analyze the performance of major stock indices over the past week.
-3. Identify key trends and factors driving the stock market performance.
-4. Analyze the performance of major sectors and industries in the stock market.
-5. Provide a forecast for the stock market performance over the next 6 months based on recent macroeconomic news.
-6. Analyst macroeconomic indicators and geopolitical events that could impact the stock market.
-7. List any recent central bank policy changes from around the world and their implications.
-8. Provide actionable trading insights.
+1. Research the U.S. macroeconomic environment to understand market conditions as of {FORMATTED_DATE}.
+2. Analyze the performance of major stock indices over the past week as of {FORMATTED_DATE}.
+
 """
 
 def market_research() -> str:
@@ -33,15 +30,17 @@ def market_research() -> str:
         }
     ]
 
-    print("Sending a request for a market research report...")
+    print(f"Sending a request for a market research report as of {FORMATTED_DATE}...")
 
     # Temperature controls the randomness of the response
     # Values range from 0.0 and 2.0 with lower temperatures 
     # being more deterministic and higher temperatures being more creative.
     response = CLIENT.chat.completions.create(
-        model="sonar-pro",
+        model=MODEL,
         messages=messages,
         temperature=TEMPERATURE
     )
 
+    print(response.citations)
+    print(response.usage)
     return response.choices[0].message.content

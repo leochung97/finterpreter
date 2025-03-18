@@ -1,5 +1,6 @@
 from dotenv import load_dotenv
 from openai import OpenAI
+from datetime import datetime
 import os
 
 # Load environment variables from .env file
@@ -13,4 +14,9 @@ CLIENT = OpenAI(
     base_url="https://api.perplexity.ai"
 )
 
+MODEL = "sonar-deep-research"
+
 TEMPERATURE = 0.1
+
+today = datetime.now()
+FORMATTED_DATE = today.strftime("%m/%d/%Y")
