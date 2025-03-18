@@ -10,10 +10,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.market:
-        report = market_research()
-        print(report)
+        print(market_research())
     elif args.ticker:
-        report = equity_research(args.ticker)
-        print(report)
+        print(equity_research(args.ticker))
     else:
         print("Please provide a valid argument")

@@ -14,8 +14,16 @@ CLIENT = OpenAI(
     base_url="https://api.perplexity.ai"
 )
 
+# sonar-deep-research
+# sonar-reasoning-pro
+# sonar-reasoning
+# sonar-pro
+# r1-1776 (offline chat model)
 MODEL = "sonar-deep-research"
 
+# Temperature controls the randomness of the response
+# Values range from 0.0 and 2.0 with lower temperatures 
+# being more deterministic and higher temperatures being more creative.
 TEMPERATURE = 0.1
 
 today = datetime.now()

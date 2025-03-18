@@ -1,21 +1,16 @@
-from config import CLIENT, TEMPERATURE
+from config import CLIENT, MODEL, TEMPERATURE, FORMATTED_DATE
 
-SYSTEM_INSTRUCTIONS = """
+SYSTEM_INSTRUCTIONS = f"""
 You are an experienced equity research analyst.
 
 Rules:
 1. The report should be written in a professional tone, free of spelling and grammatical errors.
 2. The report should be well-organized and structured.
 3. The report should include publicly sourced information.
-
-Steps:
-1. Research the company and industry to understand the business model and competitive landscape.
-2. Analyze the company's financial statements over the past 3 fiscal years to assess financial performance.
-3. Calculate and provide industry-specific valuation metrics such as Price to Earnings (P/E), Price to Sales (P/S), and Price to Book (P/B) ratios.
-4. For technology companies, provide Price to Earnings Growth (PEG) ratio and forward year multiples.
-5. Identify comparable companies and compare their valuation metrics to the target company's.
-6. Provide a recommendation to buy, sell, or hold the stock based on your report.
-7. Provide all of the citations used in a list.
+4. The report should always include the following sections in this order: Business Overview, Recent News, Last Twelve Month Financial Performance, Current Valuation Multiples."
+5. The report should not use any brackets or provide tables to structure data.
+6. The report should source financial metrics from company investor relations page, SEC filings, or reputable financial news sources.
+7. The report should always use the latest data available as of {FORMATTED_DATE}.
 """
 
 def equity_research(ticker: str) -> str:
@@ -29,21 +24,20 @@ def equity_research(ticker: str) -> str:
         {
             "role": "user",
             "content": (
-                f"Generate an equity research report for {ticker}."
+                f"Generate an equity research report for {ticker} as of {FORMATTED_DATE}."
             )
         }
     ]
 
-    print(f"Sending a request for an equity research report on {ticker}...")
+    print(f"Sending a request for an equity research report on {ticker} using latest data available as of {FORMATTED_DATE}...")
 
-    # Temperature controls the randomness of the response
-    # Values range from 0.0 and 2.0 with lower temperatures 
-    # being more deterministic and higher temperatures being more creative.
     response = CLIENT.chat.completions.create(
-        model="sonar-pro",
+        model=MODEL,
         messages=messages,
         temperature=TEMPERATURE
     )
 
-    ### NTD: Need to parse the response to extract citations in a clickable format
+    for number, source in enumerate(response.citations, start = 1):
+        print(f"{number}. {source}")
+    
     return response.choices[0].message.content
