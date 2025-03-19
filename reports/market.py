@@ -26,7 +26,7 @@ def market_research() -> str:
         }
     ]
 
-    print(f"Sending a request for a market research report as of {FORMATTED_DATE}...")
+    print(f"Creating a market research report as of {FORMATTED_DATE}.")
 
     response = CLIENT.chat.completions.create(
         model=MODEL,

@@ -10,6 +10,7 @@ Rules:
 4. The report should always include the following sections in this order: Business Overview, Recent News, Last Twelve Month Financial Performance, Current Valuation Multiples."
 5. The report should not use any brackets or provide tables to structure data.
 6. The report should source financial metrics from company investor relations page, SEC filings, or reputable financial news sources.
+7. The report should not source financial multiples or data from sources other than the company's investor relations page or SEC filings.
 7. The report should always use the latest data available as of {FORMATTED_DATE}.
 """
 
@@ -29,7 +30,7 @@ def equity_research(ticker: str) -> str:
         }
     ]
 
-    print(f"Sending a request for an equity research report on {ticker} using latest data available as of {FORMATTED_DATE}...")
+    print(f"Creating an equity research report on {ticker} using latest data available as of {FORMATTED_DATE}.")
 
     response = CLIENT.chat.completions.create(
         model=MODEL,

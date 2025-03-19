@@ -7,7 +7,6 @@ import os
 load_dotenv()
 api_key = os.getenv("API_KEY")
 
-
 # Environment variables
 CLIENT = OpenAI(
     api_key=api_key,
@@ -19,12 +18,12 @@ CLIENT = OpenAI(
 # sonar-reasoning
 # sonar-pro
 # r1-1776 (offline chat model)
-MODEL = "sonar-deep-research"
+MODEL = "sonar-pro"
 
 # Temperature controls the randomness of the response
 # Values range from 0.0 and 2.0 with lower temperatures 
 # being more deterministic and higher temperatures being more creative.
-TEMPERATURE = 0.1
+TEMPERATURE = 0.2
 
 today = datetime.now()
-FORMATTED_DATE = today.strftime("%m/%d/%Y")
+FORMATTED_DATE = today.strftime("%m.%d.%Y")
