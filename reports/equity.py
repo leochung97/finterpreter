@@ -38,7 +38,10 @@ def equity_research(ticker: str) -> str:
         temperature=TEMPERATURE
     )
 
+    citations = []
     for number, source in enumerate(response.citations, start = 1):
-        print(f"{number}. {source}")
+        citations.append((f"{number}. {source}"))
     
-    return response.choices[0].message.content
+    output = []
+    output.extend((messages, citations, response.choices[0].message.content))
+    return output

@@ -13,20 +13,25 @@ if __name__ == "__main__":
 
     output_path = Path("outputs")
     output_path.mkdir(parents=True, exist_ok=True)
+    sections = ["Messages", "Citations", "Response"]
+    section_divider = "\n\n" + "-" * 50 + "\n\n"
 
-    def save_report(report_type, ticker=None):
+    def save_report(report_type: str, ticker=None):
         if report_type == "market":
             report = market_research()
             filename = f"{FORMATTED_DATE}-markets-report.txt"
         elif report_type == "equity":
+            report = equity_research(args.ticker)
             filename = f"{FORMATTED_DATE}-{ticker}-report.txt"
         else:
             raise ValueError("Invalid report type")
     
-        print(report)
+        formatted_output = ""
+        for section, content in zip(sections, report):
+            formatted_output += f"## {section}\n\n{content}{section_divider}"
         file_path = output_path / filename
         file_path.touch()
-        file_path.write_text(report)
+        file_path.write_text(formatted_output)
 
     if args.market:
         save_report("market")
