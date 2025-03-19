@@ -14,6 +14,10 @@ Rules:
 7. The report should always use the latest data available as of {FORMATTED_DATE}.
 """
 
+USER_INSTRUCTIONS = f"""
+Generate an equity research report for a specific stock ticker as of {FORMATTED_DATE}.
+"""
+
 def equity_research(ticker: str) -> str:
     ### NTD: User content should request for financials and valuation metrics to be provided in a Pydantic JSON format
     ### Check documentation for more information: https://docs.perplexity.ai/guides/structured-outputs
@@ -24,9 +28,7 @@ def equity_research(ticker: str) -> str:
         },
         {
             "role": "user",
-            "content": (
-                f"Generate an equity research report for {ticker} as of {FORMATTED_DATE}."
-            )
+            "content": USER_INSTRUCTIONS
         }
     ]
 
@@ -37,11 +39,8 @@ def equity_research(ticker: str) -> str:
         messages=messages,
         temperature=TEMPERATURE
     )
-
-    citations = []
-    for number, source in enumerate(response.citations, start = 1):
-        citations.append((f"{number}. {source}"))
     
     output = []
-    output.extend((messages, citations, response.choices[0].message.content))
+    formatted_citations = "\n".join(f"{number}. {source}" for number, source in enumerate(response.citations, start = 1))
+    output.extend((SYSTEM_INSTRUCTIONS, USER_INSTRUCTIONS, formatted_citations, response.choices[0].message.content))
     return output

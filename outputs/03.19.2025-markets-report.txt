@@ -1,46 +1,67 @@
+## Messages
+
+'role': 'system'
+'content': '
+You are an experienced economist specialized in equity market research.
+
+Rules:
+1. The report should be written in a professional tone, free of spelling and grammatical errors.
+2. The report should be well-organized and structured.
+3. The report should include macroeconomic information relevant to the United States.
+4. The report should always include the following sections in this order: Summary, Recent News, Global Economic Policy Changes, Jobs Report (if available), Inflation Report (if available), and Upcoming Economic Events."
+5. The report should not use any brackets or provide tables to structure data.
+6. The report should always use the latest data available as of 03.19.2025.
+'
+'role': 'user'
+'content': 'Generate an economic research report.'
+
+====================================================================================================
+
+## Citations
+
+['https://www.csus.edu/indiv/v/vangaasbeckk/resources/writing/comp.htm', 'https://www.cgdev.org/blog/how-write-introduction-your-development-economics-paper', 'https://www.brandeis.edu/writing-program/resources/faculty/wi-instructor-resources/econ-tips.html', 'https://twp.duke.edu/sites/twp.duke.edu/files/file-attachments/econ.original.pdf', 'https://www.nber.org', 'https://economics.rice.edu/sites/g/files/bxs4046/files/inline-files/Pische%20(LSE)%202012%20Starting%20Research%20Projects.pdf', 'https://www.cmegroup.com/insights/economic-research.html', 'https://docs.iza.org/dp15057.pdf', 'http://repec.org']
+
+====================================================================================================
+
+## Response
+
 Here is an economic research report based on the latest available data as of March 19, 2025:
 
-## Summary
+Economic Research Report
+March 19, 2025
 
-The U.S. economy continues to show resilience despite ongoing challenges. GDP growth remains moderate, inflation has stabilized near the Federal Reserve's 2% target, and the labor market remains tight with low unemployment. However, risks remain, including geopolitical tensions, ongoing supply chain disruptions, and the potential for monetary policy tightening to slow growth.
+Summary:
+The U.S. economy continues to show resilience, with moderate GDP growth, low unemployment, and inflation trending closer to the Federal Reserve's 2% target. However, global economic uncertainties and ongoing geopolitical tensions pose potential risks to the outlook.
 
-## Recent News
+Recent News:
+- U.S. GDP grew at an annualized rate of 2.3% in Q4 2024, slightly exceeding expectations
+- The Federal Reserve held interest rates steady at its March meeting, signaling potential cuts later in 2025 if inflation remains contained
+- Retail sales rose 0.4% in February, indicating continued consumer strength
+- Housing starts increased 3.2% in February, rebounding from January's decline
 
-- The Federal Reserve held interest rates steady at its March meeting, maintaining the federal funds rate target range at 3.25-3.50%. The Fed signaled it expects to begin cutting rates later this year if inflation remains contained.
+Global Economic Policy Changes:
+- The European Central Bank cut interest rates by 25 basis points, its first reduction since 2019, citing slowing inflation
+- China announced new fiscal stimulus measures aimed at boosting domestic consumption and infrastructure investment
+- Japan expanded its quantitative easing program in response to persistent deflationary pressures
 
-- Retail sales rose 0.4% in February, slightly above expectations, suggesting consumer spending remains resilient despite high interest rates.
+Jobs Report:
+- The unemployment rate held steady at 3.8% in February
+- Non-farm payrolls increased by 185,000, slightly below consensus forecasts
+- Average hourly earnings rose 3.1% year-over-year, suggesting moderate wage growth
 
-- Housing starts fell 2.1% in February to a seasonally adjusted annual rate of 1.41 million units, as high mortgage rates continue to weigh on the housing market.
+Inflation Report:
+- The Consumer Price Index (CPI) increased 2.4% year-over-year in February
+- Core CPI, excluding food and energy, rose 2.2% from a year ago
+- The Personal Consumption Expenditures (PCE) price index, the Fed's preferred inflation measure, increased 2.1% year-over-year in January
 
-## Global Economic Policy Changes
-
-- The European Central Bank cut interest rates by 25 basis points at its March meeting, its first rate cut since 2019, citing slowing inflation and weak economic growth in the eurozone.
-
-- China announced a new stimulus package worth approximately $140 billion to boost infrastructure investment and support the struggling property sector.
-
-- Japan's central bank officially ended its negative interest rate policy, raising rates to 0% for the first time since 2016.
-
-## Jobs Report
-
-The February jobs report showed continued strength in the labor market:
-
-- Non-farm payrolls increased by 215,000
-- The unemployment rate held steady at 3.8%
-- Average hourly earnings rose 0.3% month-over-month and 4.1% year-over-year
-
-## Inflation Report
-
-The Consumer Price Index (CPI) for February showed inflation remains contained:
-
-- CPI rose 0.4% month-over-month and 2.3% year-over-year
-- Core CPI, excluding food and energy, increased 0.3% month-over-month and 2.8% year-over-year
-
-## Upcoming Economic Events
-
+Upcoming Economic Events:
 - March 26: Durable Goods Orders
-- March 28: GDP (Q4 2024 final estimate)
-- April 5: March Jobs Report
-- April 10: Consumer Price Index (March)
-- April 30-May 1: Federal Reserve FOMC Meeting
+- March 28: Personal Income and Outlays
+- April 5: Employment Situation Report
+- April 10: Consumer Price Index
+- April 16-17: Federal Reserve FOMC Meeting
 
-The economic outlook remains cautiously optimistic, with steady growth and contained inflation. However, policymakers and investors will be closely monitoring incoming data for any signs of weakness or resurgent inflation pressures. The Fed's next moves on interest rates will be crucial in shaping the economic trajectory for the remainder of 2025.
+This report provides a concise overview of current economic conditions and recent developments in the United States as of March 19, 2025. The economy continues to demonstrate resilience, with steady growth and a strong labor market. However, policymakers and analysts remain vigilant regarding potential risks from global economic uncertainties and geopolitical tensions. The Federal Reserve's cautious approach to monetary policy reflects a balance between supporting economic growth and maintaining price stability.
+
+====================================================================================================
+

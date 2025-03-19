@@ -12,6 +12,10 @@ Rules:
 6. The report should always use the latest data available as of {FORMATTED_DATE}.
 """
 
+USER_INSTRUCTIONS = f"""
+Generate an economic research report using the latest data available as of {FORMATTED_DATE}.
+"""
+
 def market_research() -> str:
     ### NTD: User content should request for economic outlook data to be provided in a Pydantic JSON format
     ### Check documentation for more information: https://docs.perplexity.ai/guides/structured-outputs
@@ -22,7 +26,7 @@ def market_research() -> str:
         },
         {
             "role": "user",
-            "content": "Generate an economic research report."
+            "content": USER_INSTRUCTIONS
         }
     ]
 
@@ -33,11 +37,8 @@ def market_research() -> str:
         messages=messages,
         temperature=TEMPERATURE
     )
-
-    citations = []
-    for number, source in enumerate(response.citations, start = 1):
-        citations.append((f"{number}. {source}"))
     
     output = []
-    output.extend((messages, citations, response.choices[0].message.content))
+    formatted_citations = "\n".join(f"{number}. {source}" for number, source in enumerate(response.citations, start = 1))
+    output.extend((SYSTEM_INSTRUCTIONS, USER_INSTRUCTIONS, formatted_citations, response.choices[0].message.content))
     return output

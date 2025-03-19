@@ -1,0 +1,89 @@
+## System Instructions
+
+
+You are an experienced equity research analyst.
+
+Rules:
+1. The report should be written in a professional tone, free of spelling and grammatical errors.
+2. The report should be well-organized and structured.
+3. The report should include publicly sourced information.
+4. The report should always include the following sections in this order: Business Overview, Recent News, Last Twelve Month Financial Performance, Current Valuation Multiples."
+5. The report should not use any brackets or provide tables to structure data.
+6. The report should source financial metrics from company investor relations page, SEC filings, or reputable financial news sources.
+7. The report should not source financial multiples or data from sources other than the company's investor relations page or SEC filings.
+7. The report should always use the latest data available as of 03.19.2025.
+
+
+====================================================================================================
+
+## User Instructions
+
+
+Generate an equity research report for a specific stock ticker as of 03.19.2025.
+
+
+====================================================================================================
+
+## Citations
+
+1. https://www.wallstreetprep.com/knowledge/sample-equity-research-report/
+2. https://charliai.com/7-best-equity-research-tools-for-2025/
+3. https://www.nasdaq.com/articles/pre-market-earnings-report-march-19-2025-gis-wsm-olli-gds-kc-srad-sig-lqda-jill-mdwd-oss
+4. https://www.alpha-sense.com/resources/equity-research-guide/
+5. https://www.koyfin.com/blog/best-stock-analysis-apps/?JJtjv3DIqMABYH=xeH2a
+6. https://www.nasdaq.com/articles/stock-market-news-mar-19-2025
+7. https://corporatefinanceinstitute.com/resources/valuation/equity-research-report/
+8. https://www.investopedia.com/best-stock-screeners-5120586
+9. https://www.jpmorgan.com/insights/research
+10. https://www.cfainstitute.org/sites/default/files/-/media/documents/support/research-challenge/challenge/rc-equity-research-report-essentials.pdf
+11. https://visualping.io/blog/investment-research-tools
+12. https://www.fe.training/free-resources/esg/equity-research-report/
+13. https://www.indeed.com/career-advice/career-development/what-is-research-report
+14. https://stockanalysis.com/article/stock-research-websites/
+15. https://www.icicidirect.com/research/equity
+16. https://faq.library.upenn.edu/business/faq/45165
+17. https://www.newtrading.io/free-stock-charts/
+18. https://www.morningstar.com
+19. https://www.zacks.com/stocks/equity-research
+20. https://www.wallstreetzen.com/blog/best-stock-research-sites/
+
+====================================================================================================
+
+## Response
+
+I apologize, but I cannot generate a full equity research report for a specific stock ticker as of 03.19.2025. As an AI language model, I don't have access to real-time financial data or the ability to conduct comprehensive company analysis. Additionally, equity research reports require in-depth analysis, financial modeling, and industry expertise that goes beyond my capabilities.
+
+However, I can provide you with an outline of what a typical equity research report would include:
+
+## Business Overview
+
+This section would provide a brief description of the company, its main products/services, key markets, and competitive positioning.
+
+## Recent News
+
+This would highlight any significant recent developments or announcements related to the company as of 03.19.2025.
+
+## Last Twelve Month Financial Performance
+
+This section would analyze the company's financial results for the past 12 months, including:
+
+- Revenue growth
+- Profit margins
+- Earnings per share
+- Cash flow metrics
+
+## Current Valuation Multiples
+
+This would include key valuation metrics such as:
+
+- Price-to-Earnings (P/E) ratio
+- Price-to-Sales (P/S) ratio
+- Enterprise Value to EBITDA (EV/EBITDA)
+- Price-to-Book (P/B) ratio
+
+These metrics would be compared to industry averages and historical levels.
+
+To get an accurate and up-to-date equity research report for a specific stock, I recommend consulting professional financial services or using specialized financial data platforms that have access to real-time market data and company financials.
+
+====================================================================================================
+

@@ -13,8 +13,8 @@ if __name__ == "__main__":
 
     output_path = Path("outputs")
     output_path.mkdir(parents=True, exist_ok=True)
-    sections = ["Messages", "Citations", "Response"]
-    section_divider = "\n\n" + "-" * 50 + "\n\n"
+    sections = ["System Instructions","User Instructions", "Citations", "Response"]
+    section_divider = "\n\n" + "=" * 100 + "\n\n"
 
     def save_report(report_type: str, ticker=None):
         if report_type == "market":
