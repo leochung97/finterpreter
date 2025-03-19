@@ -14,17 +14,23 @@ if __name__ == "__main__":
     output_path = Path("outputs")
     output_path.mkdir(parents=True, exist_ok=True)
 
+    def save_report(report_type, ticker=None):
+        if report_type == "market":
+            report = market_research()
+            filename = f"{FORMATTED_DATE}-markets-report.txt"
+        elif report_type == "equity":
+            filename = f"{FORMATTED_DATE}-{ticker}-report.txt"
+        else:
+            raise ValueError("Invalid report type")
+    
+        print(report)
+        file_path = output_path / filename
+        file_path.touch()
+        file_path.write_text(report)
+
     if args.market:
-        market_report = market_research()
-        print(market_report)
-        file_path = output_path / f"{FORMATTED_DATE}-markets-report.txt"
-        file_path.touch()
-        file_path.write_text(market_report)
+        save_report("market")
     elif args.ticker:
-        equity_report = equity_research(args.ticker)
-        print(equity_report)
-        file_path = output_path / f"{FORMATTED_DATE}-{args.ticker}-report.txt"
-        file_path.touch()
-        file_path.write_text(equity_report)
+        save_report("equity", args.ticker)
     else:
         print("Please provide a valid argument")
