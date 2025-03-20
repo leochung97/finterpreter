@@ -12,7 +12,10 @@ def equity_research(ticker: str) -> str:
     5. The report should not use any brackets or provide tables to structure data.
     6. The report should always source financial metrics from company investor relations page or SEC filings.
     7. The report should not source financial multiples or data from sources other than the company's investor relations page or SEC filings.
-    7. The report should always use the latest data available as of {FORMATTED_DATE}.
+    8. The report should always use the latest data available as of {FORMATTED_DATE}.
+    9. The report should cite the sources of the data used in the report.
+    10. Citations should ALWAYS include the company's investor relations page and SEC filings page.
+    11. All information provided must be recent (within the last 12 months of {FORMATTED_DATE}).
     """
 
     USER_INSTRUCTIONS = f"""
