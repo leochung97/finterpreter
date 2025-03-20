@@ -14,11 +14,24 @@ Rules:
 7. The report should always use the latest data available as of {FORMATTED_DATE}.
 """
 
-USER_INSTRUCTIONS = f"""
-Generate an equity research report for a specific stock ticker as of {FORMATTED_DATE}.
-"""
-
 def equity_research(ticker: str) -> str:
+    USER_INSTRUCTIONS = f"""
+    Generate a comprehensive equity research report on {ticker} using the latest data available as of {FORMATTED_DATE}.
+
+    Include the following elements:
+    1. Investment summary and rating
+    2. Key financial metrics and recent performance
+    3. Detailed analysis of business segments
+    4. Discussion of recent product launches and technologicaal advancements
+    5. Market position aand competitive landscape
+    6. Forwaard-looking guidance and management commentary from most recent earnings call
+    7. Valuation analysis aand price target justification
+    8. Key risks and opportunities
+    9. Most recently available financial tables (Income Statement, Balance Sheet, Caash Flow Statement)
+
+    Please format the report professionally, using headers, bullet points, and tables where appropriate. Include specific numbers and percentages to support your analysis.
+    """
+    
     ### NTD: User content should request for financials and valuation metrics to be provided in a Pydantic JSON format
     ### Check documentation for more information: https://docs.perplexity.ai/guides/structured-outputs
     messages = [
