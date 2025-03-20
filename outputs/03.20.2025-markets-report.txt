@@ -1,0 +1,84 @@
+## System Instructions
+
+
+You are an experienced economist specialized in equity market research.
+
+Rules:
+1. The report should be written in a professional tone, free of spelling and grammatical errors.
+2. The report should be well-organized and structured.
+3. The report should include macroeconomic information relevant to the United States.
+4. The report should always include the following sections in this order: Summary, Recent News, Global Economic Policy Changes, Jobs Report (if available), Inflation Report (if available), and Upcoming Economic Events."
+5. The report should not use any brackets or provide tables to structure data.
+6. The report should always use the latest data available as of 03.20.2025.
+
+
+====================================================================================================
+
+## User Instructions
+
+
+Generate an economic research report using the latest data available as of 03.20.2025.
+
+
+====================================================================================================
+
+## Citations
+
+1. https://altarum.org/news-and-insights/march-2025-health-sector-economic-indicators-briefs
+2. https://www.conference-board.org/topics/us-leading-indicators
+3. https://www.bea.gov/news/2025/us-international-trade-goods-and-services-december-and-annual-2024
+4. https://www.spglobal.com/marketintelligence/en/mi/research-analysis/week-ahead-economic-preview-week-of-17-march-2025.html
+5. https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20250319.htm
+6. https://www.imf.org/en/Publications/WEO
+7. https://www.federalreserve.gov/monetarypolicy/files/fomcprojtabl20250319.pdf
+8. https://www.census.gov/economic-indicators/calendar-listview.html
+9. https://www.census.gov/foreign-trade/Press-Release/current_press_release/ft900.pdf
+10. https://www.spglobal.com/market-intelligence/en/news-insights/research/global-economic-outlook-march-2025
+11. https://www.newyorkfed.org/research/calendars/i-mar25.html
+12. https://www.imf.org/en/News/Articles/2025/03/20/pr25072-imf-and-statistical-community-release-new-global-standards-for-macroeconomic-stats
+13. https://www.census.gov/economic-indicators/
+14. https://www.ers.usda.gov/publications/pub-details?pubid=111144
+15. https://www.oecd.org/en/topics/sub-issues/economic-outlook.html
+16. https://www.bea.gov/news/glance
+17. https://www.nber.org
+18. https://www.bls.gov/schedule/news_release/current_year.asp
+
+====================================================================================================
+
+## Response
+
+## Economic Research Report: March 20, 2025
+
+### Summary
+The U.S. economy is experiencing a mixed landscape as inflation moderates, labor markets remain resilient, and growth slows. The Federal Reserve has maintained interest rates steady, reflecting cautious optimism about inflation trends but concerns over weaker growth. Global economic conditions are also showing divergence, with advanced economies stabilizing while emerging markets face headwinds.
+
+### Recent News
+- The Federal Open Market Committee (FOMC) held interest rates steady during its March meeting, reflecting a cautious stance amidst slowing GDP growth and persistent inflationary pressures. The Fed projects U.S. GDP growth at 1.7% for 2025, with unemployment expected to stabilize at 4.4% and inflation moderating to 2.7% by year-end.
+- The U.S. Leading Economic Index (LEI) declined by 0.3% in February, signaling potential economic headwinds. However, the Coincident Economic Index (CEI) rose by 0.3%, indicating steady current economic activity.
+- The goods and services trade deficit widened significantly in December 2024, driven by increased imports and declining exports, reflecting weaker global demand and trade policy uncertainties.
+
+### Global Economic Policy Changes
+- The International Monetary Fund (IMF) released updated global standards for macroeconomic statistics, emphasizing interconnectedness and digitalization in the global economy.
+- Global GDP growth is forecast at 3.2% for 2025, with advanced economies expected to grow at 1.8%. Inflation is projected to decline globally, but tariff-related uncertainties and geopolitical tensions continue to pose risks.
+- Central banks in the U.S., U.K., and Japan have maintained interest rates, balancing inflation concerns with slowing growth.
+
+### Jobs Report
+- The U.S. labor market remains robust, with nonfarm payrolls adding 151,000 jobs in February. The healthcare sector contributed significantly, adding 52,000 jobs, led by ambulatory health services and hospitals.
+- The unemployment rate edged up slightly to 4.1% in February, reflecting a modest increase in labor force participation.
+- Wage growth in the healthcare sector outpaced overall nominal wage growth, with a 4.3% year-over-year increase in January.
+
+### Inflation Report
+- Economy-wide inflation moderated, with the Consumer Price Index (CPI) growing 2.8% year-over-year in February, down from 3.0% in January. Core inflation remains sticky, particularly in goods prices.
+- The Health Care Price Index (HCPI) rose to 2.8% in February, driven by prescription drug prices, which saw their highest annual increase since 2017.
+- Producer Price Index (PPI) growth slowed to 3.2%, reflecting easing supply chain pressures but persistent cost increases in manufacturing.
+
+### Upcoming Economic Events
+- March 27: Advance Economic Indicators Report, including international trade, retail, and wholesale data for February.
+- April 1: Construction Spending report for February.
+- April 6: U.S. International Trade in Goods and Services report for February.
+- April 15: Release of March CPI and PPI data, providing further insights into inflation trends.
+
+The U.S. economy is navigating a complex environment of moderating inflation, resilient labor markets, and slowing growth. Policymakers and businesses will closely monitor upcoming data releases to assess the trajectory of economic recovery and risks ahead.
+
+====================================================================================================
+
