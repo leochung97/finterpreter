@@ -1,5 +1,6 @@
 from reports.equity import equity_research
 from reports.market import market_research
+from reports.industry import industry_research
 from config import FORMATTED_DATE
 from pathlib import Path
 import argparse
@@ -8,6 +9,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Financial Research CLI Tool")
     parser.add_argument("-t", "--ticker", help="Research stock ticker to generate equity research report")
     parser.add_argument("-m", "--market", action="store_true", help="Research financial markets to generate market research report")
+    parser.add_argument("-i", "--industry", help="Researches the latest developments in an industry to generate an industry research report")
 
     args = parser.parse_args()
 
@@ -23,6 +25,9 @@ if __name__ == "__main__":
         elif report_type == "equity":
             report = equity_research(args.ticker)
             filename = f"{FORMATTED_DATE}-{ticker}-report.txt"
+        elif report_type == "industry":
+            report = industry_research(args.industry)
+            filename = f"{FORMATTED_DATE}-{args.industry}-report.txt"
         else:
             raise ValueError("Invalid report type")
     
@@ -37,5 +42,7 @@ if __name__ == "__main__":
         save_report("market")
     elif args.ticker:
         save_report("equity", args.ticker)
+    elif args.industry:
+        save_report("industry")
     else:
         print("Please provide a valid argument")
