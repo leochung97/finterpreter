@@ -40,7 +40,7 @@ def market_research() -> str:
     
     output = []
     formatted_citations = "\n".join(f"{number}. {source}" for number, source in enumerate(response.citations, start = 1))
-    output.extend((SYSTEM_INSTRUCTIONS, USER_INSTRUCTIONS, formatted_citations, response.choices[0].message.content))
+    output.extend((response.choices[0].message.content, formatted_citations, SYSTEM_INSTRUCTIONS, USER_INSTRUCTIONS))
 
     print("Market research report created successfully.")
     
