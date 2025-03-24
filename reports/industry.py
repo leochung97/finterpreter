@@ -11,7 +11,11 @@ def industry_research(sector: str) -> str:
     5. The report should include an appendix that explains any industry-specific jargon used in the report.
     6. Always include research and information from consulting firms such as Boston Consulting Group, McKinsey, Bain & Company, Deloitte, PwC, and EY-Parthenon. This list is not exclusive - include any other consulting firms that have relevant information on the {sector}."""
 
-    USER_INSTRUCTIONS = f"""Write a research report on {sector} using the latest data available as of {FORMATTED_DATE}. Include an overview of the sector, any recent trends and news, and the {sector}'s ETF price performance over the past twelve months."""
+    USER_INSTRUCTIONS = f"""Write a research report on {sector} using the latest data available as of {FORMATTED_DATE}. Include an overview of the sector, any recent trends and news, and the {sector}'s ETF price performance over the past twelve months.
+    
+    Additional Instructions:
+    1. The industry overview should explain the business model and types of products sold within {sector}. This section should also include the names of key companies in the sector along with their most recent products.
+    2. The chosen industry ETF should be the largest ETF for {sector} by assets under management (AUM)."""
 
     messages = [
         {
