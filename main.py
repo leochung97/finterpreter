@@ -10,12 +10,14 @@ if __name__ == "__main__":
     parser.add_argument("-t", "--ticker", help="Research stock ticker to generate equity research report")
     parser.add_argument("-m", "--market", action="store_true", help="Research financial markets to generate market research report")
     parser.add_argument("-i", "--industry", help="Researches the latest developments in an industry to generate an industry research report")
+    parser.add_argument("-b", "--buy", help="Opens buying trade confirmation options")
+    parser.add_argument("-s", "--sell", help="Opens selling trade confirmation options")
 
     args = parser.parse_args()
 
     output_path = Path("outputs")
     output_path.mkdir(parents=True, exist_ok=True)
-    sections = ["System Instructions","User Instructions", "Citations", "Response"]
+    sections = ["Response", "Citations", "System Instructions", "User Instructions"]
     section_divider = "\n\n" + "=" * 100 + "\n\n"
 
     def save_report(report_type: str, ticker=None):
