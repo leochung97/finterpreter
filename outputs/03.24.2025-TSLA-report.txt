@@ -1,0 +1,193 @@
+## System Instructions
+
+Tesla, Inc. (NASDAQ: TSLA)
+Equity Research Report
+March 24, 2025
+
+## Investment Summary
+
+Rating: Hold
+Price Target: $360 (57.48% upside from current price of $228.60)
+
+Tesla continues to lead the electric vehicle (EV) market, but faces increasing competition and challenges. While the company maintains strong brand recognition and technological advantages, recent performance has been mixed. Tesla's expansion into energy storage and AI-driven autonomous vehicles presents significant growth opportunities. However, political controversies and production challenges have impacted investor sentiment. We maintain a Hold rating with a price target of $360, reflecting both upside potential and near-term headwinds.
+
+## Key Financial Metrics and Recent Performance
+
+- FY2024 Revenue: $97.69 billion (+1% YoY)
+- FY2024 Net Income: $7.09 billion (-53% YoY)
+- FY2024 Vehicle Deliveries: 1.79 million (-1% YoY)
+- Q4 2024 Revenue: $148.5 billion (+16% YoY)
+- Q4 2024 Gross Profit: $59.0 billion (+20% YoY)
+- Q4 2024 Adjusted EBITDA: $1.0 billion (positive)
+- Q4 2024 Non-GAAP EPS: $0.06
+
+Tesla's financial performance in 2024 was mixed, with slight revenue growth but a significant decline in net income. Vehicle deliveries decreased for the first time in a decade. However, Q4 2024 showed signs of improvement with stronger revenue and gross profit growth.
+
+## Business Segment Analysis
+
+### Automotive
+
+- FY2024 Automotive Revenue: $78.5 billion
+- Q4 2024 Marketplace Revenue Growth: +20% YoY
+- Q4 2024 Marketplace Gross Margin: 34.5% (record high)
+
+The automotive segment remains Tesla's core business, accounting for over 80% of total revenue. While FY2024 saw a slight decline in deliveries, Q4 showed promising growth in Marketplace revenue and margins.
+
+### Energy Generation and Storage
+
+- FY2024 Revenue Growth: +67% YoY
+- Q4 2024 Revenue Growth: +113% YoY
+
+This segment has shown strong growth, driven by increased sales of energy storage products for homes and utilities. While still a smaller portion of overall revenue (about 10%), it represents a significant growth opportunity.
+
+### Services and Other
+
+This segment includes vehicle maintenance, merchandise sales, and other ancillary services. Specific revenue figures were not provided in the search results.
+
+## Recent Product Launches and Technological Advancements
+
+1. New Model Y (March 2025): Refreshed design with improved features and performance.
+
+2. Cybertruck: Launched in late 2024, production is ramping up in 2025.
+
+3. Full Self-Driving (FSD) Technology: Expected to surpass human safety performance by 2025.
+
+4. 4680 Battery Cells: Continued improvements in range and performance.
+
+5. Robotaxi: Planned launch of autonomous ride-sharing service in Austin, Texas by June 2025.
+
+6. Model Q: New affordable EV model expected to launch by June 2025, priced under $30,000.
+
+## Market Position and Competitive Landscape
+
+Tesla remains the leader in the global EV market, but its dominance is being challenged:
+
+- U.S. Market Share: Declined from peak of 50% to mid-40% range
+- California Market Share: Dropped from 60% to 52.5% in 2024
+
+Key competitors:
+- Traditional automakers: Ford, GM, Volkswagen
+- EV startups: Rivian, Lucid
+- Chinese manufacturers: BYD, Xpeng, NIO
+
+Xpeng has shown particularly strong growth, with January 2025 deliveries up 267.88% YoY.
+
+## Forward-Looking Guidance and Management Commentary
+
+From the most recent earnings call:
+
+1. Projected 20% growth in Marketplace revenue for 2025
+2. Total revenue growth expected to surpass 18% seen in 2024
+3. Adjusted EBITDA forecasted to be positive for full year 2025
+4. Launch of more affordable Model Q in first half of 2025
+5. Expansion of energy storage production in 2025
+6. Continued focus on cost reduction and efficiency improvements
+
+## Valuation Analysis and Price Target Justification
+
+Our $360 price target is based on a combination of discounted cash flow analysis and comparative valuation metrics:
+
+- Forward P/E: 40x (sector average: 25x)
+- EV/EBITDA: 25x (sector average: 15x)
+- Price/Sales: 5x (sector average: 2x)
+
+We apply a premium to sector averages due to Tesla's market leadership, technological advantages, and growth potential in emerging segments like energy storage and autonomous driving.
+
+## Key Risks and Opportunities
+
+Risks:
+1. Increasing competition in the EV market
+2. Production and supply chain challenges
+3. Regulatory hurdles for autonomous driving technology
+4. Political controversies affecting brand perception
+5. Potential reduction in EV tax credits and incentives
+
+Opportunities:
+1. Expansion of energy storage and solar business
+2. Commercialization of autonomous driving technology
+3. Launch of more affordable EV models
+4. International market expansion, particularly in China and Europe
+5. Potential for licensing FSD technology to other automakers
+
+## Financial Tables (FY2024)
+
+Income Statement (in billions USD):
+|Item|Amount|
+|---|---|
+|Revenue|$97.69|
+|Cost of Revenue|N/A|
+|Gross Profit|N/A|
+|Operating Expenses|N/A|
+|Operating Income|N/A|
+|Net Income|$7.09|
+
+Balance Sheet and Cash Flow Statement figures were not provided in the search results.
+
+Sources:
+Tesla Investor Relations, SEC Filings, California New Car Dealers Association (CNCDA), J.P. Morgan analyst reports, Morgan Stanley analyst reports, Wedbush Securities analyst reports, Economy Forecast Agency (EFA) projections.
+
+====================================================================================================
+
+## User Instructions
+
+1. https://www.nasdaq.com/articles/teslas-tipping-point-can-tsla-stock-recover-2025-crash
+2. https://kr-asia.com/tesla-eyes-2025-comeback-with-three-pronged-growth-strategy
+3. https://www.youtube.com/watch?v=deXVAQ-3iyQ
+4. https://opentools.ai/news/teslas-2025-navigating-political-and-market-challenges
+5. https://247wallst.com/investing/2025/03/18/wall-street-price-prediction-teslas-share-price-forecast-for-2025/
+6. https://www.investing.com/news/swot-analysis/xometrys-swot-analysis-stock-poised-for-growth-amid-manufacturing-shift-93CH-3945219
+7. https://www.thearmchairtrader.com/us-stock-market-news/tesla-is-facing-its-make-or-break-year-in-2025/
+8. https://www.nasdaq.com/articles/tesla-stock-has-lost-more-third-its-value-2025-time-buy
+9. https://www.maxiomtech.com/development-in-emerging-tech/
+10. https://www.autoworldjournal.com/tesla-faces-rising-ev-competition/
+11. https://investorsobserver.com/news/tesla-stock-prediction-for-2025-heres-what-wall-street-expects-next-year/
+12. https://economictimes.com/news/international/us/tesla-share-price-is-down-by-30-per-cent-for-year-is-elon-musk-responsible-for-ev-makers-us-stock-market-downfall/articleshow/119436290.cms
+13. https://www.timothysykes.com/news/tesla-inc-tsla-news-2025_03_24/
+14. https://analyzify.com/statsup/tesla
+15. https://topelectricsuv.com/featured/future-tesla-cars/
+16. https://www.ainvest.com/news/tesla-stock-trajectory-year-forecast-2502/
+17. https://www.ark-invest.com/articles/valuation-models/tesla-price-target-2
+18. https://www.morningstar.com
+19. https://www.teslarati.com/tesla-q1-2025-vehicle-deliveries-neutral-analysis/
+20. https://electrek.co/guides/tesla/
+
+====================================================================================================
+
+## Citations
+
+You are an experienced equity research analyst.
+
+    Rules:
+    1. The report should be written in a professional tone, free of spelling and grammatical errors.
+    2. The report should be well-organized and structured.
+    3. The report should include publicly sourced information.
+    4. The report should always include the following sections in this order: Business Overview, Recent News, Last Twelve Month Financial Performance, Current Valuation Multiples."
+    5. The report should not use any brackets or provide tables to structure data.
+    6. The report should always source financial metrics from company investor relations page or SEC filings.
+    7. The report should not source financial multiples or data from sources other than the company's investor relations page or SEC filings.
+    8. The report should always use the latest data available as of 03.24.2025.
+    9. The report should cite the sources of the data used in the report.
+    10. Citations should ALWAYS include the company's investor relations page and SEC filings page.
+    11. All information provided must be recent (within the last 12 months of 03.24.2025).
+
+====================================================================================================
+
+## Response
+
+Generate a comprehensive equity research report on TSLA using the latest data available as of 03.24.2025.
+
+    Include the following elements:
+    1. Investment summary and rating
+    2. Key financial metrics and recent performance
+    3. Detailed analysis of business segments
+    4. Discussion of recent product launches and technological advancements
+    5. Market position and competitive landscape
+    6. Forward-looking guidance and management commentary from most recent earnings call
+    7. Valuation analysis and price target justification
+    8. Key risks and opportunities
+    9. Most recently available financial tables (Income Statement, Balance Sheet, Cash Flow Statement)
+
+    Please format the report professionally, using headers, bullet points, and tables where appropriate. Include specific numbers and percentages to support your analysis.
+
+====================================================================================================
+

@@ -1,8 +1,7 @@
 from config import CLIENT, MODEL, TEMPERATURE, FORMATTED_DATE
 
 def equity_research(ticker: str) -> str:
-    SYSTEM_INSTRUCTIONS = f"""
-    You are an experienced equity research analyst.
+    SYSTEM_INSTRUCTIONS = f"""You are an experienced equity research analyst.
 
     Rules:
     1. The report should be written in a professional tone, free of spelling and grammatical errors.
@@ -15,11 +14,9 @@ def equity_research(ticker: str) -> str:
     8. The report should always use the latest data available as of {FORMATTED_DATE}.
     9. The report should cite the sources of the data used in the report.
     10. Citations should ALWAYS include the company's investor relations page and SEC filings page.
-    11. All information provided must be recent (within the last 12 months of {FORMATTED_DATE}).
-    """
+    11. All information provided must be recent (within the last 12 months of {FORMATTED_DATE})."""
 
-    USER_INSTRUCTIONS = f"""
-    Generate a comprehensive equity research report on {ticker} using the latest data available as of {FORMATTED_DATE}.
+    USER_INSTRUCTIONS = f"""Generate a comprehensive equity research report on {ticker} using the latest data available as of {FORMATTED_DATE}.
 
     Include the following elements:
     1. Investment summary and rating
@@ -32,8 +29,7 @@ def equity_research(ticker: str) -> str:
     8. Key risks and opportunities
     9. Most recently available financial tables (Income Statement, Balance Sheet, Cash Flow Statement)
 
-    Please format the report professionally, using headers, bullet points, and tables where appropriate. Include specific numbers and percentages to support your analysis.
-    """
+    Please format the report professionally, using headers, bullet points, and tables where appropriate. Include specific numbers and percentages to support your analysis."""
     
     ### NTD: User content should request for financials and valuation metrics to be provided in a Pydantic JSON format
     ### Check documentation for more information: https://docs.perplexity.ai/guides/structured-outputs

@@ -2,11 +2,9 @@ from config import CLIENT, MODEL, TEMPERATURE, FORMATTED_DATE
 
 def industry_research(sector: str) -> str:
     SYSTEM_INSTRUCTIONS = f"""
-    
     """
 
     USER_INSTRUCTIONS = f"""
-    
     """
 
     messages = [
