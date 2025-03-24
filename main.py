@@ -23,13 +23,13 @@ if __name__ == "__main__":
     def save_report(report_type: str, ticker=None):
         if report_type == "market":
             report = market_research()
-            filename = f"{FORMATTED_DATE}-markets-report.txt"
+            filename = f"{FORMATTED_DATE}-markets-report.md"
         elif report_type == "equity":
             report = equity_research(args.ticker)
-            filename = f"{FORMATTED_DATE}-{ticker}-report.txt"
+            filename = f"{FORMATTED_DATE}-{ticker}-report.md"
         elif report_type == "industry":
             report = industry_research(args.industry)
-            filename = f"{FORMATTED_DATE}-{args.industry}-report.txt"
+            filename = f"{FORMATTED_DATE}-{args.industry}-report.md"
         else:
             raise ValueError("Invalid report type")
     
