@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 from openai import OpenAI
 from datetime import datetime
+import alpaca_trade_api as tradeapi
 import os
 
 # Load environment variables from .env file
@@ -27,3 +28,10 @@ TEMPERATURE = 0.2
 
 today = datetime.now()
 FORMATTED_DATE = today.strftime("%m.%d.%Y")
+
+# Alpaca Trade API
+ALPACA_API = tradeapi.REST(
+    key_id=os.getenv("ALPACA_KEY"),
+    secret_key=os.getenv("ALPACA_SECRET"),
+    base_url=os.getenv("ALPACA_ENDPOINT")
+)
