@@ -6,6 +6,31 @@ from trade.portfolio import show_portfolio
 from config import FORMATTED_DATE
 from pathlib import Path
 import argparse
+import os
+import shutil
+from datetime import datetime
+
+def move_old_files():
+    outputs_dir = "outputs"
+    old_dir = os.path.join(outputs_dir, "old")
+    today = datetime.today().date()
+
+    for filename in os.listdir(outputs_dir):
+        file_path = os.path.join(outputs_dir, filename)
+
+        if os.path.isdir(file_path) or filename == "old":
+            continue
+
+        try:
+            date_str = filename.split("-")[0]
+            file_date = datetime.strptime(date_str, "%Y.%m.%d").date()
+        except (ValueError, IndexError):
+            continue
+            
+        if file_date < today:
+            dest_path = os.path.join(old_dir, filename)
+            shutil.move(file_path, dest_path)
+            print(f"Moved {filename} to {old_dir}.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Financial Research CLI Tool")
@@ -15,7 +40,6 @@ if __name__ == "__main__":
     parser.add_argument("-b", "--buy", action="store_true", help="Opens buying trade confirmation options")
     parser.add_argument("-s", "--sell", action="store_true", help="Opens selling trade confirmation options")
     parser.add_argument("-p", "--portfolio", action="store_true", help="Displays current portfolio positions")
-
     args = parser.parse_args()
 
     output_path = Path("outputs")
@@ -43,6 +67,9 @@ if __name__ == "__main__":
         file_path.touch()
         file_path.write_text(formatted_output)
 
+    # Moves old reports to old folder automatically
+    move_old_files()
+    
     if args.market:
         save_report("market")
     elif args.ticker:

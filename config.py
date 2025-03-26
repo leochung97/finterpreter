@@ -40,4 +40,4 @@ MODEL = "sonar-pro"
 TEMPERATURE = 0.2
 
 today = datetime.now()
-FORMATTED_DATE = today.strftime("%m.%d.%Y")
+FORMATTED_DATE = today.strftime("%Y.%m.%d")
