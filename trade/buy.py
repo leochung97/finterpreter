@@ -12,10 +12,20 @@ def place_order(symbol: str, qty: int, price: float = None):
             time_in_force = 'gtc',
             limit_price = price
         )
-        print(f"Order submitted: {order.side} {order.qty} {order.symbol} @ {order.limit_price}")
+        print(f"Order submitted: {order.side} {order.qty} {order.symbol} at {order.limit_price or 'Market Price'}")
         return order
     
-    except:
+    except Exception as e:
         print(f"Error placing order: {e}")
         return None
     
+def prompt_user_buy():
+    try:
+        symbol = input("Enter a ticker: ").strip().upper()
+        qty = int(input("Enter number of shares to buy: "))
+        price = input("Enter a price or press enter for market order: ")
+        price = float(price) if price else None
+        place_order(symbol, qty, price)
+    
+    except ValueError as e:
+        print(f"Invalid input format: {e}")

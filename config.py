@@ -8,12 +8,25 @@ import os
 load_dotenv()
 api_key = os.getenv("API_KEY")
 
-# Environment variables
+# OpenAI API
 CLIENT = OpenAI(
     api_key=api_key,
     base_url="https://api.perplexity.ai"
 )
 
+# Alpaca Trade API
+
+###### MIGHT HAVE TO MOVE ALPACA_API TO EACH TRADE FILE BECAUSE OF DIFFERENT API 
+###### https://alpaca.markets/deprecated/docs/api-documentation/api-v2/
+
+ALPACA_API = tradeapi.REST(
+    key_id=os.getenv("ALPACA_KEY"),
+    secret_key=os.getenv("ALPACA_SECRET"),
+    base_url=os.getenv("ALPACA_ENDPOINT"),
+    api_version="v2"
+)
+
+# Perplexity AI Available Models:
 # sonar-deep-research
 # sonar-reasoning-pro
 # sonar-reasoning
@@ -28,10 +41,3 @@ TEMPERATURE = 0.2
 
 today = datetime.now()
 FORMATTED_DATE = today.strftime("%m.%d.%Y")
-
-# Alpaca Trade API
-ALPACA_API = tradeapi.REST(
-    key_id=os.getenv("ALPACA_KEY"),
-    secret_key=os.getenv("ALPACA_SECRET"),
-    base_url=os.getenv("ALPACA_ENDPOINT")
-)

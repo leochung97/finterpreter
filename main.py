@@ -1,6 +1,8 @@
 from reports.equity import equity_research
 from reports.market import market_research
 from reports.industry import industry_research
+from trade.buy import prompt_user_buy
+from trade.portfolio import show_portfolio
 from config import FORMATTED_DATE
 from pathlib import Path
 import argparse
@@ -10,8 +12,9 @@ if __name__ == "__main__":
     parser.add_argument("-t", "--ticker", help="Research stock ticker to generate equity research report")
     parser.add_argument("-m", "--market", action="store_true", help="Research financial markets to generate market research report")
     parser.add_argument("-i", "--industry", help="Researches the latest developments in an industry to generate an industry research report")
-    parser.add_argument("-b", "--buy", help="Opens buying trade confirmation options")
-    parser.add_argument("-s", "--sell", help="Opens selling trade confirmation options")
+    parser.add_argument("-b", "--buy", action="store_true", help="Opens buying trade confirmation options")
+    parser.add_argument("-s", "--sell", action="store_true", help="Opens selling trade confirmation options")
+    parser.add_argument("-p", "--portfolio", action="store_true", help="Displays current portfolio positions")
 
     args = parser.parse_args()
 
@@ -46,5 +49,11 @@ if __name__ == "__main__":
         save_report("equity", args.ticker)
     elif args.industry:
         save_report("industry")
+    elif args.buy:
+        prompt_user_buy()
+    # elif args.sell:
+    #     print("Sell trade confirmation options")
+    elif args.portfolio:
+        show_portfolio()
     else:
         print("Please provide a valid argument")
