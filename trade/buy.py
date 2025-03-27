@@ -1,6 +1,6 @@
 from config import ALPACA_API
 
-def place_order(symbol: str, qty: int, price: float = None):
+def buy_order(symbol: str, qty: int, price: float = None):
     order_type = 'limit' if price else 'market'
     
     try:
@@ -25,7 +25,7 @@ def prompt_user_buy():
         qty = int(input("Enter number of shares to buy: "))
         price = input("Enter a price or press enter for market order: ")
         price = float(price) if price else None
-        place_order(symbol, qty, price)
+        buy_order(symbol, qty, price)
     
     except ValueError as e:
         print(f"Invalid input format: {e}")
