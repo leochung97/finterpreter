@@ -28,6 +28,7 @@ def equity_research(ticker: str) -> str:
     7. Valuation analysis and price target justification
     8. Key risks and opportunities
     9. Most recently available financial tables (Income Statement, Balance Sheet, Cash Flow Statement)
+    10. Near-term future events to be aware of (earnings, product launches, etc.)
 
     Please format the report professionally, using headers, bullet points, and tables where appropriate. Include specific numbers and percentages to support your analysis."""
     
