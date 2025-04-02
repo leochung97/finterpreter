@@ -14,7 +14,8 @@ def equity_research(ticker: str) -> str:
     8. The report should always use the latest data available as of {FORMATTED_DATE}.
     9. The report should cite the sources of the data used in the report.
     10. Citations should ALWAYS include the company's investor relations page and SEC filings page.
-    11. All information provided must be recent (within the last 12 months of {FORMATTED_DATE})."""
+    11. All information provided must be recent (within the last 12 months of {FORMATTED_DATE}).
+    12. Do not provide a target share price or target share price range in the report."""
 
     USER_INSTRUCTIONS = f"""Generate a comprehensive equity research report on {ticker} using the latest data available as of {FORMATTED_DATE}.
 

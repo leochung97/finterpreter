@@ -9,7 +9,8 @@ def market_research() -> str:
     3. The report should include macroeconomic information relevant to the United States.
     4. The report should always include the following sections in this order: Summary, Recent News, Global Economic Policy Changes, Jobs Report (if available), Inflation Report (if available), and Upcoming Economic Events."
     5. The report should not use any brackets or provide tables to structure data.
-    6. The report should always use the latest data available as of {FORMATTED_DATE}."""
+    6. The report should always use the latest data available as of {FORMATTED_DATE}.
+    7. The report should be detailed and specific - include exact dates, percentages, and numbers where appropriate."""
 
     USER_INSTRUCTIONS = f"""Generate an economic research report using the latest data available as of {FORMATTED_DATE}."""
     
