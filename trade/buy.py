@@ -12,7 +12,8 @@ def buy_order(symbol: str, qty: int, price: float = None):
             time_in_force = 'gtc',
             limit_price = price
         )
-        print(f"Order submitted: {order.side} {order.qty} {order.symbol} at {order.limit_price or 'Market Price'}")
+        # print(f"Order submitted: {order.side} {order.qty} {order.symbol} at {order.limit_price or 'Market Price'}")
+        print(f"Order: {order}")
         return order
     
     except Exception as e:

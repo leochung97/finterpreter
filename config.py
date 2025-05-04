@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 from openai import OpenAI
 from datetime import datetime
+from alpaca.trading.client import TradingClient
 import alpaca_trade_api as tradeapi
 import os
 
@@ -25,6 +26,8 @@ ALPACA_API = tradeapi.REST(
     base_url=os.getenv("ALPACA_ENDPOINT"),
     api_version="v2"
 )
+
+TRADING_CLIENT = TradingClient(os.getenv("ALPACA_KEY"), os.getenv("ALPACA_SECRET"))
 
 # Perplexity AI Available Models:
 # sonar-deep-research

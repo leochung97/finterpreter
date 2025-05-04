@@ -1,8 +1,16 @@
-from config import ALPACA_API
+from config import TRADING_CLIENT
 
 def show_portfolio():
-    positions = ALPACA_API.list_positions()
-    print(positions)
+    account = TRADING_CLIENT.get_account()
+    positions = TRADING_CLIENT.get_all_positions()
+    # print(account)
+    # print(positions)
     
     for position in positions:
-        print(f"Ticker: {position.symbol}, Quantity: {position.qty}, Avg. Entry Price: {position.avg_entry_price}, Cost Basis: {position.cost_basis}, Current Price: {position.current_price}, Today's Change: {position.change_today}")
+        ticker = position.symbol
+        quantity = position.qty
+        avg_entry_price = f"${position.avg_entry_price}"
+        current_price = f"${position.current_price}"
+        change_today = "{:.2f}".format(float(position.change_today))
+        percentage_change = "{:.2f}".format((float(position.current_price) - float(position.avg_entry_price)) / float(position.avg_entry_price) * 100)
+        print(f"Ticker: {ticker}, Quantity: {quantity}, Avg Entry Price: {avg_entry_price}, Current Price: {current_price}, Change Today: {change_today}%, Percentage Change: {percentage_change}%")
