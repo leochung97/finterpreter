@@ -5,6 +5,7 @@ from datetime import datetime
 import alpaca_trade_api as tradeapi
 from alpaca.trading.client import TradingClient
 from alpaca.trading.stream import TradingStream
+from alpaca.data.historical.option import OptionHistoricalDataClient
 
 # Load environment variables from .env file
 load_dotenv()
@@ -30,6 +31,7 @@ ALPACA_API = tradeapi.REST(
 
 TRADING_CLIENT = TradingClient(os.getenv("ALPACA_KEY"), os.getenv("ALPACA_SECRET"))
 TRADING_STREAM = TradingStream(os.getenv("ALPACA_KEY"), os.getenv("ALPACA_SECRET"), paper=True)
+OPTION_CLIENT = OptionHistoricalDataClient(os.getenv("ALPACA_KEY"), os.getenv("ALPACA_SECRET"))
 
 # Perplexity AI Available Models:
 # sonar-deep-research

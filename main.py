@@ -3,7 +3,7 @@ from reports.market import market_research
 from reports.industry import industry_research
 from trade.buy import prompt_user_buy
 from trade.portfolio import show_portfolio
-from trade.options import show_options_chain
+from trade.options import get_options_chain
 from config import FORMATTED_DATE
 from pathlib import Path
 import argparse
@@ -85,9 +85,6 @@ if __name__ == "__main__":
     elif args.portfolio:
         show_portfolio()
     elif args.options:
-        if args.ticker:
-            show_options_chain(args.ticker)
-        else:
-            print("Please provide a ticker symbol for options chain")
+        get_options_chain()
     else:
         print("Please provide a valid argument")
