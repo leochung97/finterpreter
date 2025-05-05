@@ -1,10 +1,10 @@
+import os
 from dotenv import load_dotenv
 from openai import OpenAI
 from datetime import datetime
+import alpaca_trade_api as tradeapi
 from alpaca.trading.client import TradingClient
 from alpaca.trading.stream import TradingStream
-import alpaca_trade_api as tradeapi
-import os
 
 # Load environment variables from .env file
 load_dotenv()

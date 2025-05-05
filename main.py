@@ -3,6 +3,7 @@ from reports.market import market_research
 from reports.industry import industry_research
 from trade.buy import prompt_user_buy
 from trade.portfolio import show_portfolio
+from trade.options import show_options_chain
 from config import FORMATTED_DATE
 from pathlib import Path
 import argparse
@@ -40,6 +41,7 @@ if __name__ == "__main__":
     parser.add_argument("-b", "--buy", action="store_true", help="Opens buying trade confirmation options")
     parser.add_argument("-s", "--sell", action="store_true", help="Opens selling trade confirmation options")
     parser.add_argument("-p", "--portfolio", action="store_true", help="Displays current portfolio positions")
+    parser.add_argument("-o", "--options", action="store_true", help="Opens options chain for a requested ticker")
     args = parser.parse_args()
 
     output_path = Path("outputs")
@@ -79,8 +81,13 @@ if __name__ == "__main__":
     elif args.buy:
         prompt_user_buy()
     # elif args.sell:
-    #     print("Sell trade confirmation options")
+    #     print("Sell trade confirmation")
     elif args.portfolio:
         show_portfolio()
+    elif args.options:
+        if args.ticker:
+            show_options_chain(args.ticker)
+        else:
+            print("Please provide a ticker symbol for options chain")
     else:
         print("Please provide a valid argument")
