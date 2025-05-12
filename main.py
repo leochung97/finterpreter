@@ -43,7 +43,7 @@ if __name__ == "__main__":
     parser.add_argument("-s", "--sell", action="store_true", help="Opens selling trade confirmation options")
     parser.add_argument("-p", "--portfolio", action="store_true", help="Displays current portfolio positions")
     parser.add_argument("-o", "--options", action="store_true", help="Opens options chain for a requested ticker")
-    parser.add_argument("-q", "--query", help="Query Perplexity AI for information")
+    parser.add_argument("-q", "--query", action="store_true", help="Query Perplexity AI for information")
     args = parser.parse_args()
 
     output_path = Path("outputs")
