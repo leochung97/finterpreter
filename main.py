@@ -1,3 +1,4 @@
+from reports.query import query_perplexity
 from reports.equity import equity_research
 from reports.market import market_research
 from reports.industry import industry_research
@@ -42,6 +43,7 @@ if __name__ == "__main__":
     parser.add_argument("-s", "--sell", action="store_true", help="Opens selling trade confirmation options")
     parser.add_argument("-p", "--portfolio", action="store_true", help="Displays current portfolio positions")
     parser.add_argument("-o", "--options", action="store_true", help="Opens options chain for a requested ticker")
+    parser.add_argument("-q", "--query", help="Query Perplexity AI for information")
     args = parser.parse_args()
 
     output_path = Path("outputs")
@@ -86,5 +88,7 @@ if __name__ == "__main__":
         show_portfolio()
     elif args.options:
         get_options_chain()
+    elif args.query:
+        query_perplexity()
     else:
         print("Please provide a valid argument")
